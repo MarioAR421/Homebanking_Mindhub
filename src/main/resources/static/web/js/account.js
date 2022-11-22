@@ -58,7 +58,7 @@ createApp({
         console.log(this.nAccount)
 
         axios
-        .delete("http://localhost:8080/api/account/delete?number="+this.nAccount)
+        .delete("/api/account/delete?number="+this.nAccount)
         .then(response => {
           window.alert("Eliminada con exito")
           return window.location.href = "/web/accounts.html"
