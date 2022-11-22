@@ -5,7 +5,7 @@ createApp({
     data(){
         return{
           name : "",
-          url :'http://localhost:8080/api/clients/current',
+          url :'/api/clients/current',
           accounts:null,
           loans:null,
           client:null,
@@ -36,7 +36,7 @@ createApp({
 
       newAccount(type){
         axios
-        .post('http://localhost:8080/api/clients/current/accounts?type=AHORRO')
+        .post('/api/clients/current/accounts?type=AHORRO')
         .then(response => console.log('nueva cuenta creada'))
         location.reload()
         
@@ -45,7 +45,7 @@ createApp({
 
       newAccount2(){
         axios
-        .post('http://localhost:8080/api/clients/current/accounts?type=CORRIENTE')
+        .post('/api/clients/current/accounts?type=CORRIENTE')
         .then(response => console.log('nueva cuenta creada'))
         location.reload()
         
