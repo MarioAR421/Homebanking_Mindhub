@@ -19,7 +19,7 @@ createApp({
 
             client2 = "email="+this.email+"&"+"password="+this.password
 
-                axios.post('http://localhost:8080/api/clients',client)
+                axios.post('/api/clients',client)
                 .then(response => {
                     window.alert("Bienvenido a Banco del sol")
                     console.log('registered!');

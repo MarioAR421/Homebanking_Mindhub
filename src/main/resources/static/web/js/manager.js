@@ -9,7 +9,7 @@ createApp({
             name : "",
             lastname: "",
             email : "",
-            url :'http://localhost:8080/api/clients',
+            url :'/api/clients',
             id: null,
             json:null
         }

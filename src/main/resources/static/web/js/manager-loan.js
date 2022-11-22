@@ -15,7 +15,7 @@ createApp({
     methods: {
         createLoan(){
             axios
-            .post("http://localhost:8080/api/create/loan?name="+this.name+"&mount="+this.mount+"&payments="+this.payments)
+            .post("/api/create/loan?name="+this.name+"&mount="+this.mount+"&payments="+this.payments)
             .then(response => {
                 window.alert("Creado")
                 

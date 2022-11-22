@@ -4,7 +4,7 @@ createApp({
 
     data(){
         return{
-          url :'http://localhost:8080/api/clients/current',
+          url :'/api/clients/current',
           accounts:null,
           client:null,
           accountOrigyn:"",
@@ -41,7 +41,7 @@ createApp({
       transfer(){
         transfern = "amount="+this.amount+"&description="+this.description+"&numberDestiny="+this.accountDestiny+"&numberOrigin="+this.accountOrigyn
         axios
-        .post('http://localhost:8080/api/transactions',transfern)
+        .post('/api/transactions',transfern)
         .then(response => {
             window.alert("Transferencia exitosa")
             location.reload()

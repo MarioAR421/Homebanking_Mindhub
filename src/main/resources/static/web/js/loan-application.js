@@ -4,7 +4,7 @@ createApp({
 
     data(){
         return{
-          url :'http://localhost:8080/api/clients/current',
+          url :'/api/clients/current',
           accounts:null,
           accountDestiny:"",
           amount:"",
@@ -31,7 +31,7 @@ createApp({
       },
       loadData2(){
         axios
-        .get('http://localhost:8080/api/loans')
+        .get('/api/loans')
         .then((result) => {
           this.payments = result.data.filter(loan => loan.name == this.loanType)
           this.paymentsList = this.payments[0].payments
@@ -57,7 +57,7 @@ createApp({
             "numberAccount": this.accountDestiny
           }
           axios
-          .post('http://localhost:8080/api/loans',loan )
+          .post('/api/loans',loan )
           .then((result) => {
             window.alert(result.data)
             location.reload()

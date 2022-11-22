@@ -5,7 +5,7 @@ createApp({
     data(){
         return{
           name : "",
-          url :'http://localhost:8080/api/clients/current',
+          url :'/api/clients/current',
           cards:null,
           cardsCredit: null,
           cardsDebit: null,
@@ -72,7 +72,7 @@ createApp({
         card = "number="+number
 
         axios
-        .delete("http://localhost:8080/api/cards/delete?"+card)
+        .delete("/api/cards/delete?"+card)
         .then(response =>{
           window.alert("Eliminada con exito")
           location.reload()}

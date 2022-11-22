@@ -9,7 +9,7 @@ createApp({
           cards: null,
           cardsCredit: null,
           cardsDebit: null,
-          url :'http://localhost:8080/api/clients/current',
+          url :'/api/clients/current',
 
         }
     },
@@ -40,7 +40,7 @@ createApp({
 
             }
             else{
-            axios.post("http://localhost:8080/api/clients/current/cards ",card)
+            axios.post("/api/clients/current/cards ",card)
             .then(responce => 
                 console.log("creado"))
                 return window.location.href = "/web/cards.html"
