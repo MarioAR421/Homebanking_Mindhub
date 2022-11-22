@@ -155,7 +155,7 @@
                     <p class="card__info">{{filterDate(tarjeta.fromDate)}}</p>
                   
                   </div>
-                  <button class="btn btn-danger" id="boton5" @click="deleteCard(tarjeta.number)">Eliminar tarjeta</button>
+                  <button class="btn btn-danger"  @click="deleteCard(tarjeta.number)">Eliminar tarjeta</button>
                   
               </div>
               
@@ -170,7 +170,7 @@
         
       </main>
       <div class="d-flex justify-content-center" v-if="6>cards.length">
-        <a class="btn btn-warning" @click href="./create-cards.html">solicitar nueva tarjeta</a>
+        <a class="btn btn-warning" id="boton5" @click href="./create-cards.html">solicitar nueva tarjeta</a>
       </div> 
       
     
