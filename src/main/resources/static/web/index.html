@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styleindex.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <title>Home | Banco del Sol </title>
+</head>
+<body >
+    <header id="app" class="f-flex">
+      <div id="titulo" class="d-flex justify-content-center align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-flare" width="55" height="55" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <circle cx="12" cy="12" r="2" />
+          <path d="M3 12h4m5 -9v4m5 5h4m-9 5v4m-4.5 -13.5l1 1m8 -1l-1 1m0 7l1 1m-8 -1l-1 1" />
+        </svg>
+        <a class="navbar-brand d-flex " href="#">Banco del Sol</a>  
+      </div>
+            
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">¿Quienes somos?</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./register.html">Hacete cliente!</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Turno</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Beneficios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Tienda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Ayuda</a>
+                </li>
+              </li>
+              <li class="nav-item dropdown">
+            </ul>
+            <form  class="d-flex" role="search">
+             
+              <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Ingresar!
+              </button>
+                           
+              <div class="modal fade custom-btn btn-14" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar sesion</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label" >Email</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" v-model="email">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label" >Contraseña</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" v-model="password">
+                        </div>                       
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button  @click="logIn()" type="button" class="btn btn-warning">Ingresar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+      <main id="app">
+        <div id="carrusel d-flex justify-content-center">
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./images/carrusel1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>No hagas filas!! </h5>
+                  <p>Con nuestara app podes realizar todos los tramites sin perder tiempo.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="./images/carrusel2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>La mejor atencion</h5>
+                  <p>Tenemos el personal mas capacitado para darte una atencion de primera.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/carrusel3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Inverciones con las mejores tazas!!</h5>
+                  <p>En banco del sol tenes la mejor variedad de inverciones del pais.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div id="separadora" class="container d-flex justify-content-between justify-content-center">
+          <div class="d-flex">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cash" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <rect x="7" y="9" width="14" height="10" rx="2" />
+              <circle cx="14" cy="14" r="2" />
+              <path d="M17 9v-2a2 2 0 0 0 -2 -2h-10a2 2 0 0 0 -2 2v6a2 2 0 0 0 2 2h2" />
+            </svg>
+            <h3 class="d-flex align-items-center">¿Queres cobrar tu sueldo en Banco del sol?</h3>
+          </div>
+        <a class="custom-btn btn-14 btn btn-primary" href="./register.html"><span>¡Hacelo!</span></a>
+        </div>
+
+        <div id="subtitulo" class="container">
+          <h3>Tenemos lo que estas buscando!</h3>
+        </div>
+
+        <div class="container d-flex flex-wrap">
+          <div class="card mb-3 container" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4 d-flex">
+                <img src="./images/card1.webp" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">De oro</h5>
+                  <p class="card-text">Te ayudamos a concretar tus proyectos con un servicio exclusivo y atención personalizada.</p>
+                  <a href="#" class="card-text"><small>Conoce mas!</small></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 container d-flex" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./images/card2.webp" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Preferencial</h5>
+                  <p class="card-text">Accedé a atención prioritaria para acompañarte en todo lo que necesites.</p>
+                  <a href="#" class="card-text"><small>Conoce mas!</small></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 container d-flex" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./images/card5.webp" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Estudiante</h5>
+                  <p class="card-text">¿Estás estudiando? Vamos a acompañarte desde el comienzo de tu carrera.</p>
+                  <a href="#" class="card-text"><small>Conoce mas!</small></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 container d-flex" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4 d-flex">
+                <img src="./images/card4.webp" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Mayores</h5>
+                  <p class="card-text">Llegó tu momento de disfrutar con todas estas propuestas que pensamos para vos.</p>
+                  <a href="#" class="card-text"><small>Conoce mas!</small></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        
+        
+      </main>
+    <footer class="d-flex flex-column"  >
+      <div class="container d-flex justify-content-between" id="contenedor5">
+        <div class="d-flex flex-column ">
+          <h5>Información útil</h5>
+          <p>Comisiones y tasas de interés</p>
+          <p>Riesgo operacional</p>
+          <p>Atención a Usuarios</p>
+          <p>Teléfonos Útiles</p>
+        </div>
+        <div class="d-flex flex-column">
+          <h5>Información legal</h5>
+          <p>Defensa del Consumidor</p>
+          <p>Defensa de las y los Consumidores</p>
+          <p>Seguridad en internet</p>
+          <p>Contratos adhesión </p>
+        </div>
+        <div class="d-flex flex-column">
+          <h5>Nosotros</h5>
+          <p>Institucional</p>
+          <p>Información</p>
+          <p>Fundación</p>
+          <p>Carga tu CV</p>
+          <p>Código de conducta</p>
+        </div>
+        <div class="d-flex flex-column">
+          <h5>Reclamos y sugerencias</h5>
+          <p>Contactanos (Reclamos y Consultas)</p>
+          <p>Consultá el estado de tu reclamo o sugerencia</p>
+          <p>¿Dónde está mi tarjeta?</p>
+          <p>Encuesta</p>
+        </div>
+      </div>
+      <div class="container d-flex">
+        <img id="financiero" src="./images/banner-usuarios-financieros.jpg" alt="">
+      </div>
+      <div class="container d-flex justify-content-end">
+        <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+        </svg></a>
+        <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+        </svg></a>
+        <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <rect x="4" y="4" width="16" height="16" rx="4" />
+          <circle cx="12" cy="12" r="3" />
+          <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+        </svg></a>
+            
+
+      </div>
+      <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 600" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="5%" stop-color="#fcb900"></stop><stop offset="95%" stop-color="#ff6900"></stop></linearGradient></defs><path d="M 0,600 C 0,600 0,200 0,200 C 77.91387559808612,187.8181818181818 155.82775119617224,175.63636363636365 263,180 C 370.17224880382776,184.36363636363635 506.6028708133972,205.27272727272728 613,207 C 719.3971291866028,208.72727272727272 795.7607655502393,191.27272727272728 885,171 C 974.2392344497607,150.72727272727272 1076.3540669856459,127.63636363636363 1171,132 C 1265.6459330143541,136.36363636363637 1352.8229665071772,168.1818181818182 1440,200 C 1440,200 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><defs><linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="5%" stop-color="#fcb900"></stop><stop offset="95%" stop-color="#ff6900"></stop></linearGradient></defs><path d="M 0,600 C 0,600 0,400 0,400 C 103.00478468899522,423.7129186602871 206.00956937799043,447.4258373205742 288,460 C 369.99043062200957,472.5741626794258 430.96650717703346,474.0095693779905 524,463 C 617.0334928229665,451.9904306220095 742.1244019138757,428.53588516746413 842,430 C 941.8755980861243,431.46411483253587 1016.5358851674641,457.84688995215316 1112,457 C 1207.4641148325359,456.15311004784684 1323.732057416268,428.07655502392345 1440,400 C 1440,400 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-1"></path></svg>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</body>
+</html>

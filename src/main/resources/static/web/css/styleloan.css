@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Public Sans', sans-serif;
+    /* border: 2px solid red;  */
+}
+
+
+
+header{
+    background-image: url(https://cdn.pixabay.com/photo/2017/07/08/10/24/orange-2484007_960_720.png);
+}
+
+nav{
+    background-color:#F79F1F
+}
+
+#titulo{
+    background-color:#FFC312;
+    border-radius: 5px;
+}
+
+#contenedor1{
+    background-color:#FFC312;
+    border-radius: 5px;
+    text-align: center;
+    height:8vh;
+    width:56vh;
+    font-size:30px
+}
+
+#imagenpie{
+    height:15vh;
+}
+
+#contentenedor1B{
+    margin: 1rem;
+}
+
+.contenedor2{
+    background: rgba( 0, 0, 0, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 30rem;
+    margin:1rem;
+    font-size: 1.5rem;
+}
+
+
+
+main{
+    min-height: 100vh;
+    background-image: url("https://img.freepik.com/vector-gratis/banquero-toma-dinero-clientes-ahorrar-comerciante-o-corredor-computadora-portatil-trabajando-efectivo-ilustracion-dibujos-animados_74855-14286.jpg?w=826&t=st=1665459386~exp=1665459986~hmac=84d8bf8be5a07bd70bee66c6b35aadfbba1a0e00ce7a16b98a5fd01ec3bcafef");
+    background-repeat: no-repeat; 
+    background-size:cover;
+    background-position:center;
+    margin: 0 8% 0 8%;
+}
+
+#contenedor4{
+    height:53%;
+    width:100%;
+    border-radius: 5px;
+    padding: 0 5% 0 5% ;
+
+    background: rgba( 126, 176, 71, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+#boton{
+    width: 100%;
+   
+}

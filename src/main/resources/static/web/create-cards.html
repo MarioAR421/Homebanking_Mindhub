@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/stylecreatecards.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <title>Pedir tarjeta | Banco del Sol</title>
+</head>
+<body id="app">
+    <main class="d-flex align-items-center justify-content-center ">
+        <div class=" d-flex p-2 " id="tarjeta">
+            <form>
+                <fieldset >
+                  <legend>Solicitar tarjeta nueva</legend>
+                  <div class="mb-3">
+                    <div class="form-check" v-if="3>cardsCredit.length">
+                        <input class="form-check-input" type="radio" v-model="type" name="flexRadioDefault" value="CREDIT" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Credito
+                        </label>
+                      </div>
+                      <div class="form-check" v-if="3>cardsDebit.length">
+                        <input class="form-check-input" value="DEBIT" v-model="type" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          Debito
+                        </label>
+                      </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="" class="form-label">Color de tarjeta</label>
+                    <select id="" class="form-select" v-model="color">
+                      <option>GOLD</option>
+                      <option>SILVER</option>
+                      <option>TITANIUM</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-check">
+                 
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center justify-content-evenly">
+                    <a type="button" href="./cards.html"  class="btn btn-danger">Salir</a>
+                  <button type="button" @click="createCard()" class="btn btn-success">Pedir</button>
+                  </div>
+                </fieldset>
+              </form>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/create-cards.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</body>
+</html>

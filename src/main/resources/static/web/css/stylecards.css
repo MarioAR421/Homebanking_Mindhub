@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Public Sans', sans-serif;
+    /* border: 2px solid red;  */
+}
+
+body{
+  margin-bottom: 50px;
+}
+
+
+header{
+    background-image: url(https://cdn.pixabay.com/photo/2017/07/08/10/24/orange-2484007_960_720.png);
+}
+
+nav{
+    background-color:#F79F1F
+}
+
+#titulo{
+    background-color:#FFC312;
+    border-radius: 5px;
+}
+
+#contenedor1{
+    background-color:#FFC312;
+    border-radius: 5px;
+    text-align: center;
+    height:8vh;
+    width:56vh;
+    font-size:30px
+}
+
+#imagenpie{
+  width: 50%;
+}
+
+#contentenedor1B{
+    margin: 1rem;
+}
+
+.contenedor2{
+    background: rgba( 0, 0, 0, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 30rem;
+    margin:2.5rem;
+    font-size: 1.5rem;
+    
+}
+
+
+
+main{
+    min-height: 100vh;
+    background-image: url("https://img.freepik.com/vector-gratis/banquero-toma-dinero-clientes-ahorrar-comerciante-o-corredor-computadora-portatil-trabajando-efectivo-ilustracion-dibujos-animados_74855-14286.jpg?w=826&t=st=1665459386~exp=1665459986~hmac=84d8bf8be5a07bd70bee66c6b35aadfbba1a0e00ce7a16b98a5fd01ec3bcafef");
+    background-repeat: no-repeat; 
+    background-size:cover;
+    background-position:center;
+    margin: 0 8% 0 8%;
+}
+
+.card{
+    width: 320px;
+    height: 500px;
+      -webkit-perspective: 600px;
+      -moz-perspective: 600px;
+      perspective:600px;
+      
+    }
+    
+    .card__partA{
+      box-shadow: 1px 1px #aaa3a3;
+        top: 0;
+    z-index: 1000;
+      left: 0;
+      display: inline-block;
+        width: 320px;
+        height: 210px;
+        background-image: url('https://thumbs.dreamstime.com/b/textura-de-fondo-dorado-verano-con-l%C3%A1mina-oro-papel-aluminio-214930563.jpg'), linear-gradient(to right bottom, #fd696b, #fa616e, #f65871, #f15075, #ec4879);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 8px;
+       
+        
+    }
+
+    .card__partB{
+        box-shadow: 1px 1px #aaa3a3;
+          top: 0;
+      z-index: 1000;
+        left: 0;
+        display: inline-block;
+          width: 320px;
+          height: 210px;
+          background-image: url('https://i.pinimg.com/736x/3d/00/74/3d007482eb379adc43fe5705264389ae.jpg'), linear-gradient(to right bottom, #fd696b, #fa616e, #f65871, #f15075, #ec4879);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          border-radius: 8px;
+         
+          
+      }
+
+      .card__partC{
+        box-shadow: 1px 1px #aaa3a3;
+          top: 0;
+      z-index: 1000;
+        left: 0;
+        display: inline-block;
+          width: 320px;
+          height: 210px;
+          background-image: url('https://us.123rf.com/450wm/studio3321/studio33211512/studio3321151200174/50629177-titanio-textura-de-aluminio-con-la-reflexi%C3%B3n-de-fondo.jpg'), linear-gradient(to right bottom, #fd696b, #fa616e, #f65871, #f15075, #ec4879);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          border-radius: 8px;
+         
+          
+      }
+    
+    .card__front{
+      padding: 18px;
+    
+    }
+    
+    
+    
+    
+    .card__logo {
+        height: 16px;
+    }
+    
+    .card__front-logo{
+          position: absolute;
+        top: 18px;
+        right: 18px;
+    }
+    .card__square {
+        border-radius: 5px;
+        height: 30px;
+    }
+    
+    .card_numer {
+        display: block;
+        width: 100%;
+        word-spacing: 4px;
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    .card__space-75 {
+        width: 75%;
+        float: left;
+    }
+    
+    .card__space-25 {
+        width: 25%;
+        float: left;
+    }
+    
+    .card__label {
+        font-size: 10px;
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.8);
+        letter-spacing: 1px;
+    }
+    
+    .card__info {
+        margin-bottom: 0;
+        margin-top: 5px;
+        font-size: 16px;
+        line-height: 18px;
+        color: #fff;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    
+    
+ 
+    
+    
+
+    
+    

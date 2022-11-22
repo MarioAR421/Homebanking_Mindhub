@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styleloan.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <title>Prestamos | Banco del Sol</title>
+  </head>
+
+  <body id="app">
+    <header class="d-flex p-2">
+      <div class="d-flex p-2 container justify-content-center">
+        <div class="d-flex p-2" id="titulo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-flare"
+            width="55"
+            height="55"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="12" cy="12" r="2" />
+            <path
+              d="M3 12h4m5 -9v4m5 5h4m-9 5v4m-4.5 -13.5l1 1m8 -1l-1 1m0 7l1 1m-8 -1l-1 1"
+            />
+          </svg>
+          <h1 class="align-items-end">Banco del Sol</h1>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <h3>Prestamos</h3>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item d-flex align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-coin"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <circle cx="12" cy="12" r="9" />
+              <path
+                d="M14.8 9a2 2 0 0 0 -1.8 -1h-2a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4h-2a2 2 0 0 1 -1.8 -1"
+              />
+              <path d="M12 6v2m0 8v2" />
+            </svg>
+            <a class="nav-link active" aria-current="page" href="#"
+              >Prestamos</a
+            >
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-wallet"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M17 8v-3a1 1 0 0 0 -1 -1h-10a2 2 0 0 0 0 4h12a1 1 0 0 1 1 1v3m0 4v3a1 1 0 0 1 -1 1h-12a2 2 0 0 1 -2 -2v-12"
+              />
+              <path d="M20 12v4h-4a2 2 0 0 1 0 -4h4" />
+            </svg>
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="./accounts.html"
+              >Cuentas</a
+            >
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-transfer-in"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M4 18v3h16v-14l-8 -4l-8 4v3" />
+              <path d="M4 14h9" />
+              <path d="M10 11l3 3l-3 3" />
+            </svg>
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="./transfers.html"
+              >Transferir</a
+            >
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-cash"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <rect x="7" y="9" width="14" height="10" rx="2" />
+              <circle cx="14" cy="14" r="2" />
+              <path
+                d="M17 9v-2a2 2 0 0 0 -2 -2h-10a2 2 0 0 0 -2 2v6a2 2 0 0 0 2 2h2"
+              />
+            </svg>
+            <a class="nav-link active" aria-current="page" href="./cards.html"
+              >Tarjetas</a
+            >
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-logout"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2"
+              />
+              <path d="M7 12h14l-3 -3m0 6l3 -3" />
+            </svg>
+            <button type="button" class="btn btn-lg" @click="logOut()">
+              Salir
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="d-flex align-items-center justify-content-center">
+      <div>
+        <div class="d-flex flex-wrap">
+          <div class="d-flex flex-column" id="contenedor4">
+            <h3>Seleccione tipo de Prestamo</h3>
+            <div
+              class="d-flex flex_row justify-content-center justify-content-around"
+            >
+              <div class="form-check d-flex justify-content-center">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  v-model="loanType"
+                  name="flexRadioDefault"
+                  value="Hipotecario"
+                  id="flexRadioDefault1"
+                  @click="loadData2()"
+                />
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Hipotecario
+                </label>
+              </div>
+              <div class="form-check d-flex justify-content-center">
+                <input
+                  class="form-check-input"
+                  value="Automotriz"
+                  v-model="loanType"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault2"
+                  @click="loadData2()"
+                />
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Automotriz
+                </label>
+              </div>
+              <div class="form-check d-flex justify-content-center">
+                <input
+                  class="form-check-input"
+                  value="Personal"
+                  v-model="loanType"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault2"
+                  @click="loadData2()"
+                />
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Personal
+                </label>
+              </div>
+            </div>
+
+            <h4>Seleccione una cuenta</h4>
+            <select
+              v-model="accountDestiny"
+              class="form-select"
+              aria-label="Default select example"
+            >
+              <template v-for="cuenta of accounts">
+                <option>{{cuenta.number}}</option>
+              </template>
+            </select>
+            <label for="inputPassword5" class="form-label">
+              <h4>Ingrese el monto</h4>
+            </label>
+
+            <input
+              v-model="amount"
+              type="number"
+              id="amount"
+              class="form-control"
+            />
+            <template v-if="loanType">
+              <h6 style="color: red">Monto maximo ${{payments[0].amount}}</h6>
+            </template>
+            <h4>Cantidad de cuotas</h4>
+            <select
+              v-model="paymentsSelect"
+              class="form-select"
+              aria-label="Default select example"
+            >
+              <template v-for="payment of paymentsList">
+                <option>{{payment}}</option>
+              </template>
+            </select>
+
+            <template v-if="paymentsSelect">
+              <p>
+                {{paymentsSelect}} cuotas de
+                ${{(amount/paymentsSelect)+(amount/paymentsSelect)*paymentPercentaje/100}}
+              </p>
+            </template>
+            <template v-if="loanType">
+              <h6 style="color: red">Taza {{paymentPercentaje}}%</h6>
+            </template>
+          </div>
+        </div>
+
+        <button
+          type="button"
+          class="btn btn-warning d-flex justify-content-center"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          id="boton"
+        >
+          <p>Solicitar</p>
+        </button>
+
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <h2 style="color: black">Esta seguro?</h2>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary btn-danger"
+                  data-bs-dismiss="modal"
+                >
+                  Canselar
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  @click="sendLoans()"
+                >
+                  Si
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <p>
+          <b>Precios y comisiones</b>:&nbsp;&nbsp;Mantenimiento mensual de caja
+          de ahorro en pesos: sin cargo / Transacciones por ventanilla: sin
+          cargo / Mantenimiento mensual de cuenta corriente bancaria en pesos PF
+          individuos: $ 1.800,00 / Transacciones en cajeros automáticos de la
+          red Banelco: $ 135,00 / Transacciones en cajeros automáticos de otras
+          redes: $ 165,00 / Comisión de renovación anual de la Tarjeta de
+          Crédito Visa Internacional para la cartera general: $ 9.317,00 /
+          Comisión renovación anual de la Tarjeta de Crédito Mastercard
+          Internacional para la cartera general: $ 9.317,00 / Comisión de
+          mantenimiento de la cuenta de la tarjeta de crédito: $ 499,73.
+        </p>
+        <p>Los valores informados incluyen IVA.</p>
+      </div>
+      <div class="container">
+        <img
+          id="imagenpie"
+          src="./images/banner-usuarios-financieros.jpg"
+          alt=""
+        />
+      </div>
+
+      <svg
+        width="100%"
+        height="100%"
+        id="svg"
+        viewBox="0 0 1440 600"
+        xmlns="http://www.w3.org/2000/svg"
+        class="transition duration-300 ease-in-out delay-150"
+      >
+        <defs>
+          <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%">
+            <stop offset="5%" stop-color="#fcb900"></stop>
+            <stop offset="95%" stop-color="#ff6900"></stop>
+          </linearGradient>
+        </defs>
+        <path
+          d="M 0,600 C 0,600 0,200 0,200 C 77.91387559808612,187.8181818181818 155.82775119617224,175.63636363636365 263,180 C 370.17224880382776,184.36363636363635 506.6028708133972,205.27272727272728 613,207 C 719.3971291866028,208.72727272727272 795.7607655502393,191.27272727272728 885,171 C 974.2392344497607,150.72727272727272 1076.3540669856459,127.63636363636363 1171,132 C 1265.6459330143541,136.36363636363637 1352.8229665071772,168.1818181818182 1440,200 C 1440,200 1440,600 1440,600 Z"
+          stroke="none"
+          stroke-width="0"
+          fill="url(#gradient)"
+          fill-opacity="0.53"
+          class="transition-all duration-300 ease-in-out delay-150 path-0"
+        ></path>
+        <defs>
+          <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%">
+            <stop offset="5%" stop-color="#fcb900"></stop>
+            <stop offset="95%" stop-color="#ff6900"></stop>
+          </linearGradient>
+        </defs>
+        <path
+          d="M 0,600 C 0,600 0,400 0,400 C 103.00478468899522,423.7129186602871 206.00956937799043,447.4258373205742 288,460 C 369.99043062200957,472.5741626794258 430.96650717703346,474.0095693779905 524,463 C 617.0334928229665,451.9904306220095 742.1244019138757,428.53588516746413 842,430 C 941.8755980861243,431.46411483253587 1016.5358851674641,457.84688995215316 1112,457 C 1207.4641148325359,456.15311004784684 1323.732057416268,428.07655502392345 1440,400 C 1440,400 1440,600 1440,600 Z"
+          stroke="none"
+          stroke-width="0"
+          fill="url(#gradient)"
+          fill-opacity="1"
+          class="transition-all duration-300 ease-in-out delay-150 path-1"
+        ></path>
+      </svg>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/loan-application.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </body>
+</html>
