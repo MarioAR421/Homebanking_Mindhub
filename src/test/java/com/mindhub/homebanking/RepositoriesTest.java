@@ -23,7 +23,7 @@ import java.util.List;
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 
 public class RepositoriesTest {
-
+/*
     @Autowired
     LoanRepository loanRepository;
 
@@ -82,7 +82,7 @@ public class RepositoriesTest {
         List<Transaction> transactions = transactionRepository.findAll();
         assertThat(transactions,is(not(empty())));
     }
-
+*/
 
 
 
